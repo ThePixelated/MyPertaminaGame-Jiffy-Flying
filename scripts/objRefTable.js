@@ -12,6 +12,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform,
 		C3.Behaviors.destroy,
 		C3.Plugins.TiledBg,
+		C3.Plugins.Audio,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.SetLayerVisible,
@@ -19,6 +20,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text.Acts.SetWebFont,
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Acts.SetSize,
+		C3.Plugins.Audio.Acts.Play,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.Sprite.Exps.X,
@@ -29,7 +31,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.Platform.Acts.SetGravity,
 		C3.Behaviors.Platform.Acts.SetVectorY,
 		C3.Plugins.Sprite.Acts.SetAngle,
-		C3.Plugins.Mouse.Cnds.OnAnyClick,
+		C3.Plugins.Touch.Cnds.OnTouchStart,
 		C3.Plugins.Sprite.Cnds.IsBetweenAngles,
 		C3.Plugins.Sprite.Exps.Angle,
 		C3.Plugins.Sprite.Cnds.IsOverlapping,
@@ -60,7 +62,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Acts.Post,
 		C3.Plugins.AJAX.Cnds.OnComplete,
 		C3.Plugins.AJAX.Exps.LastStatusCode,
-		C3.Plugins.AJAX.Cnds.OnError
+		C3.Plugins.AJAX.Cnds.OnError,
+		C3.Plugins.Button.Cnds.OnClicked,
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -107,6 +111,7 @@ self.C3_JsPropNameTable = [
 	{Sprite: 0},
 	{TiledBackground: 0},
 	{TiledBackground2: 0},
+	{Audio: 0},
 	{Family1: 0},
 	{SecondsPerObstacle: 0},
 	{JumpStrength: 0},
@@ -170,5 +175,6 @@ self.InstanceType = {
 	Sprite: class extends self.ISpriteInstance {},
 	TiledBackground: class extends self.ITiledBackgroundInstance {},
 	TiledBackground2: class extends self.ITiledBackgroundInstance {},
+	Audio: class extends self.IInstance {},
 	Family1: class extends self.ISpriteInstance {}
 }
