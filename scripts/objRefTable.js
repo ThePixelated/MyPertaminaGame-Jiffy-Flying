@@ -60,9 +60,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Acts.Post,
 		C3.Plugins.AJAX.Cnds.OnComplete,
 		C3.Plugins.AJAX.Exps.LastStatusCode,
-		C3.Plugins.AJAX.Cnds.OnError,
-		C3.Plugins.Button.Cnds.OnClicked,
-		C3.Plugins.System.Acts.GoToLayout
+		C3.Plugins.AJAX.Cnds.OnError
 	];
 };
 self.C3_JsPropNameTable = [
