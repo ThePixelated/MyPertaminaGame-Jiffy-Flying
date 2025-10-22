@@ -69,6 +69,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Cnds.OnError,
 		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
+		C3.JavaScriptInEvents.Game_Event49_Act1,
 		C3.Plugins.Browser.Acts.Reload
 	];
 };
@@ -124,6 +125,7 @@ self.C3_JsPropNameTable = [
 	{MainMenuTxt: 0},
 	{LeaderBoard: 0},
 	{Shadow: 0},
+	{MainMenuTutor: 0},
 	{SecondsPerObstacle: 0},
 	{JumpStrength: 0},
 	{ScrollSpeed: 0},
@@ -197,5 +199,6 @@ self.InstanceType = {
 	Audio: class extends self.IInstance {},
 	MainMenuTxt: class extends self.ITextInstance {},
 	LeaderBoard: class extends self.ISpriteInstance {},
-	Shadow: class extends self.ISpriteInstance {}
+	Shadow: class extends self.ISpriteInstance {},
+	MainMenuTutor: class extends self.ISpriteInstance {}
 }
