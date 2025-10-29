@@ -22,6 +22,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.SetVar,
 		C3.Plugins.Sprite.Acts.SetSize,
 		C3.Plugins.Audio.Acts.Play,
+		C3.JavaScriptInEvents.Game_Event2_Act8,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Sprite.Exps.X,
 		C3.Plugins.Sprite.Exps.Y,
@@ -63,13 +64,10 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.SetPos,
 		C3.Plugins.System.Exps.layoutwidth,
 		C3.Plugins.AJAX.Acts.SetHeader,
-		C3.Plugins.AJAX.Acts.Post,
-		C3.Plugins.AJAX.Cnds.OnComplete,
-		C3.Plugins.AJAX.Exps.LastStatusCode,
-		C3.Plugins.AJAX.Cnds.OnError,
+		C3.JavaScriptInEvents.Game_Event45_Act2,
 		C3.Plugins.System.Cnds.LayerVisible,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
-		C3.Plugins.Browser.Acts.Reload
+		C3.JavaScriptInEvents.Game_Event50_Act1
 	];
 };
 self.C3_JsPropNameTable = [
@@ -122,9 +120,11 @@ self.C3_JsPropNameTable = [
 	{New_BG_Skyline: 0},
 	{Audio: 0},
 	{MainMenuTxt: 0},
-	{LeaderBoard: 0},
+	{LeaderBoardBtn: 0},
 	{Shadow: 0},
 	{MainMenuTutor: 0},
+	{PIDText: 0},
+	{Text2: 0},
 	{SecondsPerObstacle: 0},
 	{JumpStrength: 0},
 	{ScrollSpeed: 0},
@@ -134,8 +134,14 @@ self.C3_JsPropNameTable = [
 	{capPipeHeight: 0},
 	{minPipeHeight: 0},
 	{GameStage: 0},
+	{Data: 0},
+	{params: 0},
 	{ID_user: 0},
 	{ID_game: 0},
+	{mobileNumber: 0},
+	{token: 0},
+	{transactionID: 0},
+	{gamemodeID: 0},
 	{SpeedMultiplier: 0},
 	{LevelUpScore: 0},
 	{JarakBillboard: 0},
@@ -197,7 +203,9 @@ self.InstanceType = {
 	New_BG_Skyline: class extends self.ISpriteInstance {},
 	Audio: class extends self.IInstance {},
 	MainMenuTxt: class extends self.ITextInstance {},
-	LeaderBoard: class extends self.ISpriteInstance {},
+	LeaderBoardBtn: class extends self.ISpriteInstance {},
 	Shadow: class extends self.ISpriteInstance {},
-	MainMenuTutor: class extends self.ISpriteInstance {}
+	MainMenuTutor: class extends self.ISpriteInstance {},
+	PIDText: class extends self.ITextInstance {},
+	Text2: class extends self.ITextInstance {}
 }
